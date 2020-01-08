@@ -32,7 +32,6 @@ a() { sed 's/^/-----> /'; }
 I() { sed "s/^/$(printf '\033')[31m       /;s/$/$(printf '\033')[0m/"; }
 A() { sed "s/^/$(printf '\033')[31m-----> /;s/$/$(printf '\033')[0m/"; }
 
-
 export_env_dir() {
   local env_dir=$1
   if [ -d "$env_dir" ]; then
